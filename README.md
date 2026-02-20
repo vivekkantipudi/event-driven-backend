@@ -36,9 +36,9 @@ This system is built using a decoupled **Producer-Consumer** pattern to ensure h
    docker-compose up --build
    ```
 3. **Verify Health**
-  * Check the health status of the services using the following endpoints:*
-  Producer API http://localhost:8000/health
-  Consumer Worker http://localhost:8001/health
+  * Check the health status of the services using the following endpoints:
+  *Producer API http://localhost:8000/health
+  *Consumer Worker http://localhost:8001/health
 
 ## API Documentation
 
