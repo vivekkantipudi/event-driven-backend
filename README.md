@@ -4,7 +4,7 @@ A robust, decoupled backend service that tracks user activities (e.g., login, lo
 
 
 
-## 🏗 Architecture Overview
+##  Architecture Overview
 
 This system is built using a decoupled **Producer-Consumer** pattern to ensure high availability, fast response times, and resilience against database downtime.
 
@@ -13,7 +13,7 @@ This system is built using a decoupled **Producer-Consumer** pattern to ensure h
 3. **Consumer Service (Python Worker):** A background service that subscribes to the RabbitMQ queue, processes incoming events one by one, and persists them to the database.
 4. **Database (MySQL):** Stores the processed events. It utilizes a JSON column format for highly flexible event metadata.
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 * **Language:** Python 3.10
 * **Framework:** FastAPI (Producer)
@@ -23,7 +23,7 @@ This system is built using a decoupled **Producer-Consumer** pattern to ensure h
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 * Docker and Docker Compose installed on your machine.
@@ -36,7 +36,7 @@ This system is built using a decoupled **Producer-Consumer** pattern to ensure h
    docker-compose up --build
    ```
 3. **Verify Health**
-  * Check the health status of the services using the following endpoints:
+  * Check the health status of the services using the following endpoints:*
   Producer API http://localhost:8000/health
   Consumer Worker http://localhost:8001/health
 
